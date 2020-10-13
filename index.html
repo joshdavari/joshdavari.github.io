@@ -1,1 +1,163 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'EB Garamond', Garamond;
+        font-size: 14px;
+        letter-spacing: .015em;
+        line-height: 22px;
+      }
+      
+      .columns {
+        display: flex;
+      }
+      
+      .columns :first-child {
+        flex-grow: 1;
+      }
+      
+      .columns > :last-child {
+        text-align: right;
+      }
+      
+      ul {
+        margin: 4px 0 10px;
+        padding: 0;
+      }
+      
+      li {
+        margin-bottom: 4px;
+        margin-left: 16px;
+      }
+      
+      .name {
+        align-self: center;
+        font-size: 40px;
+      }
+      
+      .section {
+        margin-top: 16px;
+      }
+      
+      .section > :not(.section-header) {
+        margin: 4px;
+      }
+      
+      .section-header {
+        border-style: solid;
+        border-width: .01em 0;
+        line-height: normal;
+        margin-bottom: 10px;
+        padding: 2px 4px;
+        text-transform: uppercase;
+        width: 100%;
+      }
+      
+      .italic {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section columns">
+      <div class="name">Joshua Davari</div>
+      <div>
+        <div>509-554-4529</div>
+        <div>joshua.davari@gmail.com</div>
+        <div>Seattle, WA 98102</div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">Work Experience</div>
 
+      <div>
+        <div class="columns">
+          <div class="bold">
+            <div>Senior Software Engineer</div>
+            <div class="italic">ENGIE Impact</div>
+          </div>
+          <div>
+            <div>Seattle, WA</div>
+            <div>April 2020 - ongoing</div>
+          </div>
+        </div>
+        <ul>
+          <li>Developed a ticketing system hosted on Azure using Angular with NgRx state management on the front-end, and C# services communicating via Service Bus on the back-end.</li>
+          <li>Built an AWS web app using Node.js for the back-end.</li>
+          <li>Acted as team principal engineer, collaborating with product owner to prioritize work items and mentoring other team members.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="columns">
+          <div class="bold">
+            <div>Data Engineer</div>
+            <div class="italic">GlaxoSmithKline</div>
+          </div>
+          <div>
+            <div>Philadelphia, PA</div>
+            <div>January 2019 - April 2020</div>
+          </div>
+        </div>
+        <ul>
+          <li>Created Python library and Databricks notebooks to perform data transformations.</li>
+          <li>Constructed ingestion pipelines for pharmacology reporting data using Azure Data Factory.</li>
+          <li>Automated infrastructure setup for data analysis tools with Ansible and Terraform.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="columns">
+          <div class="bold">
+            <div>Software Engineer</div>
+            <div class="italic">Finastra</div>
+          </div>
+          <div>
+            <div>Portland, OR</div>
+            <div>April 2014 - December 2018</div>
+          </div>
+        </div>
+        <ul>
+          <li>Developed C# back-end Azure Service Fabric services for a SaaS application that 700+ financial institutions use to report mortgage data.</li>
+          <li>Used Docker Containers to deploy a legacy desktop application to Azure and expose its functionality via an API.</li>
+          <li>Designed and implemented the front-end for multiple web applications using the Angular Typescript framework.</li>
+          <li>Increased automation by setting up continuous integration builds to run regression tests.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="columns">
+          <div class="bold">
+            <div>Associate Software Engineer</div>
+            <div class="italic">Lockheed Martin</div>
+          </div>
+          <div>
+            <div>Richland, WA</div>
+            <div>January 2014 - April 2014</div>
+          </div>
+        </div>
+        <ul>
+          <li>Refactored SQL stored procedures used to aggregate reporting data from several companies, reducing total lines of code by about 90%.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">Education</div>
+      
+      <div class="columns">
+        <div>
+          <div class="bold">Bachelor of Arts in Computer Science</div>
+          <div class="italic">Washington State University</div>
+          <div>Minor: Neuroscience</div>
+        </div>
+        <div>
+          <div>Pullman, WA</div>
+          <div>May 2013</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
